@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" cz-shortcut-listen="true">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="./index.html">Garrett Young</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
 
         <div class="navbar" id="navbarSupportedContent">
@@ -54,7 +54,11 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <div class="fixed-bottom text-white text-center">Copyright GARRETT YOUNG</div>
+
+    <footer class="footer mt-auto py-3 fixed-bottom">
+        <div class="container text-center" style="color: white">COPYRIGHT GARRETT YOUNG</div>
+    </footer>
+
     <script>
         // Capture User Inputs and store them into variables
         const name = $('#name-input').val().trim()

@@ -1,0 +1,41 @@
+/* ABOUT ME STYLING */
+
+#aboutme {
+    background-image: url(http://connormcclenahan.com/wp-content/uploads/2015/04/webpage-background.jpg);
+    background-image: url(../images/black-background_00313351.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#aboutmejumbotron {
+    background: none
+}
+
+* {
+    font-family: 'Anton', sans-serif;
+}
+
+#name {
+    font-family: 'Anton', sans-serif;
+    font-size: 40pt;
+}
+
+
+/* PORTFOLIO PAGE STYLING */
+
+#projects {
+    background-image: url(https://iomhouston.com/wp-content/uploads/2014/03/Portfolio-BG.jpg);
+    background-image: url(../images/backgroundportfolio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* CONTACT PAGE STYLING */
+
+#contactPage {
+    background-image: url(https://ironparadisefitness.com/wp-content/uploads/2017/05/Contact-Me-Background.png);
+    background-image: url(../images/Contact-Me-Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

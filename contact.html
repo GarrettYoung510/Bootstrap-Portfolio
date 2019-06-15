@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
+    <link rel="stylesheet" href="./assets/css/background.css">
     <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/business-20/512/screen_computer_development_display_web-512.png">
     <!-- FAVICON -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body class="bg-secondary" cz-shortcut-listen="true">
+<body class="" cz-shortcut-listen="true" id="contactPage">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="./index.html">Garrett Young</a>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
         <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
 
-        <div class="navbar" id="navbarSupportedContent">
+        <div class="navbar ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">About<span class="sr-only">(current)</span></a>
@@ -38,25 +39,28 @@
         </div>
     </nav>
     </nav>
-    <form class="p-3">
-        <div class="form-group">
-            <label for="exampleInputName" class="text-white">Name</label>
-            <input type="text" class="form-control w-25 p-3" id="name-input" placeholder="John Smith">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail" class="text-white">Email address</label>
-            <input type="email" class="form-control w-25 p-3" id="email-input" aria-describedby="emailHelp" placeholder="email@example.com">
-            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-        </div>
-        <div class="form-group">
-            <label for="exampleInputMessage" class="text-white ">Message/Comment</label>
-            <textarea class="form-control  w-25" id="comment-input" rows="4" placeholder="AMAZING WEBSITE!"></textarea>
-            <!-- <input type="text" class="form-control w-25 p-5" id="exampleInputMessage" placeholder="AMAZING WEBSITE!"> -->
-            <!-- <small id="emailHelp" class="form-text text-muted">Thank you for visiting!</small> -->
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <div>
+        <form class="p-3">
+            <div class="form-group">
+                <label for="exampleInputName" class="text-white">Name</label>
+                <input type="text" class="form-control w-25 p-3" id="name-input" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail" class="text-white">Email address</label>
+                <input type="email" class="form-control w-25 p-3" id="email-input" aria-describedby="emailHelp" placeholder="email@example.com">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <label for="exampleInputMessage" class="text-white ">Message/Comment</label>
+                <textarea class="form-control  w-25" id="comment-input" rows="4" placeholder="Message/Comment"></textarea>
+                <!-- <input type="text" class="form-control w-25 p-5" id="exampleInputMessage" placeholder="AMAZING WEBSITE!"> -->
+                <!-- <small id="emailHelp" class="form-text text-muted">Thank you for visiting!</small> -->
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
 
-        <div class="card d-flex align-items-end flex-column mt-3" style="width: 18rem;">
+
+        </form>
+        <div class="card d-flex align-items-end flex-column mt-3 ml-3" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">My Contact Information</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Garrett Young</h6>
@@ -66,14 +70,12 @@
 
             </div>
         </div>
-    </form>
+        <footer class="footer mt-auto py-3 fixed-bottom">
+            <div class="container text-center" style="color: white">COPYRIGHT GARRETT YOUNG</div>
+        </footer>
 
 
-
-    <footer class="footer mt-auto py-3 fixed-bottom bg-primary">
-        <div class="container text-center" style="color: white">COPYRIGHT GARRETT YOUNG</div>
-    </footer>
-
+    </div>
     <script>
         // Capture User Inputs and store them into variables
         const name = $('#name-input').val().trim()
